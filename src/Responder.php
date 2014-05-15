@@ -36,18 +36,6 @@ abstract class Responder
      */
     public function __invoke()
     {
-        $response = $this->respond();
-        $response->setStatusCode($this->getHttpStatus());
-
-        return $response;
-    }
-
-    /**
-     * Gets the HTTP Status Code for the Response.
-     * @return int
-     */
-    protected function getHttpStatus()
-    {
-        return 200;
+        return $this->respond();
     }
 }
