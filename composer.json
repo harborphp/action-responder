@@ -19,6 +19,7 @@
     },
     "autoload": {
         "psr-4": {
+            "Harbor\\ActionResponder\\Stubs\\": "tests/stubs",
             "Harbor\\ActionResponder\\": "src/"
         }
     }

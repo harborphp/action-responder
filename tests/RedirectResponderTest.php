@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__.'/stubs/StubRedirectResponder.php';
+use Harbor\ActionResponder\Stubs\StubRedirectResponder;
 
 class RedirectResponderTest extends PHPUnit_Framework_TestCase
 {

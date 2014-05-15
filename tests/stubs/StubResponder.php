@@ -1,5 +1,7 @@
 <?php
 
+namespace Harbor\ActionResponder\Stubs;
+
 use Harbor\ActionResponder\Responder;
 
 class StubResponder extends Responder
@@ -9,6 +11,7 @@ class StubResponder extends Responder
      */
     public function __invoke()
     {
+        $this->response->setContent('Foo');
         return $this->response;
     }
 }

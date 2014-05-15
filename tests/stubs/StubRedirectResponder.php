@@ -1,5 +1,7 @@
 <?php
 
+namespace Harbor\ActionResponder\Stubs;
+
 use Harbor\ActionResponder\RedirectResponder;
 
 class StubRedirectResponder extends RedirectResponder
