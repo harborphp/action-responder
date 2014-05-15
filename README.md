@@ -27,7 +27,7 @@ class BlogListAction extends Action
     {
         // Do something with your domain to get the Blog list
 
-        $this->responder->data['articles'] = $articles;
+        $this->responder->articles = $articles;
         return $this->getResponse();
     }
 }
