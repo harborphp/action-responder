@@ -10,7 +10,6 @@ class ResponderTest extends PHPUnit_Framework_TestCase
         $responder = new StubResponder(new Response());
 
         $this->assertInstanceOf('Harbor\ActionResponder\Responder', $responder);
-        $this->assertAttributeEquals([], 'data', $responder);
     }
 
     public function testInvocation()

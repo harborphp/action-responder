@@ -27,7 +27,7 @@ class JsonResponderTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('[]', $responder()->getContent());
 
         $responder = new JsonResponder(new JsonResponse());
-        $responder->data['foo'] = 'bar';
+        $responder->foo = 'bar';
         $this->assertEquals('{"foo":"bar"}', $responder()->getContent());
     }
 }
