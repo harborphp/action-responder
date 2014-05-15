@@ -1,6 +1,6 @@
 <?php
 
-use Harbor\Responder\RedirectResponder;
+use Harbor\ActionResponder\RedirectResponder;
 
 class StubRedirectResponder extends RedirectResponder
 {

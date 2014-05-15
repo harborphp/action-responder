@@ -1,6 +1,6 @@
 <?php
 
-use Harbor\Responder\JsonResponder;
+use Harbor\ActionResponder\JsonResponder;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 class JsonResponderTest extends PHPUnit_Framework_TestCase
@@ -9,7 +9,7 @@ class JsonResponderTest extends PHPUnit_Framework_TestCase
     {
         $responder = new JsonResponder(new JsonResponse());
 
-        $this->assertInstanceOf('Harbor\Responder\Responder', $responder);
+        $this->assertInstanceOf('Harbor\ActionResponder\Responder', $responder);
         $this->assertAttributeInstanceOf('Symfony\Component\HttpFoundation\JsonResponse', 'response', $responder);
     }
 

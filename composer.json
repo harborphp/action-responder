@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Harbor\\Responder\\": "src/"
+            "Harbor\\ActionResponder\\": "src/"
         }
     }
 }

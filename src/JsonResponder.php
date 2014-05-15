@@ -1,6 +1,6 @@
 <?php
 
-namespace Harbor\Responder;
+namespace Harbor\ActionResponder;
 
 use Symfony\Component\HttpFoundation\JsonResponse;
 

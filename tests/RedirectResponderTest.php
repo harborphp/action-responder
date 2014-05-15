@@ -8,7 +8,7 @@ class RedirectResponderTest extends PHPUnit_Framework_TestCase
     {
         $responder = new StubRedirectResponder();
 
-        $this->assertInstanceOf('Harbor\Responder\Responder', $responder);
+        $this->assertInstanceOf('Harbor\ActionResponder\Responder', $responder);
         $this->assertAttributeInstanceOf('Symfony\Component\HttpFoundation\RedirectResponse', 'response', $responder);
     }
 

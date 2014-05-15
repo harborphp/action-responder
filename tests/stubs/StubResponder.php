@@ -1,6 +1,6 @@
 <?php
 
-use Harbor\Responder\Responder;
+use Harbor\ActionResponder\Responder;
 
 class StubResponder extends Responder
 {
