@@ -23,6 +23,7 @@ class JsonResponder extends Responder
     public function __invoke()
     {
         $this->response->setData($this->toArray());
+
         return $this->response;
     }
 }
