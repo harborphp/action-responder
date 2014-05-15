@@ -1,5 +1,5 @@
 {
-    "name": "harbor/responder",
+    "name": "harbor/action-responder",
     "description": "A Responder implementation for the ADR pattern.",
     "require-dev": {
         "phpunit/phpunit": "4.1.*"
