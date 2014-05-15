@@ -8,21 +8,17 @@ These are base classes, intended to be extended (in most situations).
 
 ## Action Example
 
+This example uses a `JsonAction` which uses a `JsonResponder`.
+
 ``` php
 <?php
 
 namespace Blog\Api\Actions;
 
-use Harbor\ActionResponder\Action;
-use Symfony\Component\HttpFoundation\Request;
+use Harbor\ActionResponder\JsonAction;
 
-class BlogListAction extends Action
+class BlogListAction extends JsonAction
 {
-    public function __construct(Request $request, JsonResponder $responder)
-    {
-        parent::__construct($request, $responder);
-    }
-
     public function __invoke()
     {
         // Do something with your domain to get the Blog list
