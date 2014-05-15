@@ -7,7 +7,7 @@ class StubResponder extends Responder
     /**
      * @return Response
      */
-    protected function respond()
+    public function __invoke()
     {
         return $this->response;
     }

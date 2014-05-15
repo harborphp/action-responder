@@ -5,7 +5,7 @@ namespace Harbor\Responder;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
- * A generic Redirect Responder.  Just makes things a little easier.
+ * A Redirect Responder
  *
  * @package Harbor\Responder
  */
@@ -23,7 +23,7 @@ abstract class RedirectResponder extends Responder
      * Respond to the Redirect
      * @return Response
      */
-    protected function respond()
+    public function __invoke()
     {
         return $this->response;
     }

@@ -7,9 +7,10 @@ use Symfony\Component\HttpFoundation\Response;
 abstract class Responder
 {
     /**
+     * The point of execution for the Responder.
      * @return Response
      */
-    abstract protected function respond();
+    abstract public function __invoke();
 
     /**
      * @var array
@@ -28,14 +29,5 @@ abstract class Responder
     {
         $this->response = $response;
         $this->data = [];
-    }
-
-    /**
-     * The point of execution for the Responder.
-     * @return Response
-     */
-    public function __invoke()
-    {
-        return $this->respond();
     }
 }
