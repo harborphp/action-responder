@@ -2,6 +2,8 @@
 
 namespace Harbor\ActionResponder;
 
+use Symfony\Component\HttpFoundation\Request;
+
 /**
  * Class Action
  * @package Harbor\ActionResponder
@@ -13,13 +15,20 @@ abstract class Action
     /**
      * @var Responder
      */
+    protected $request;
+
+    /**
+     * @var Responder
+     */
     protected $responder;
 
     /**
+     * @param Request   $request
      * @param Responder $responder
      */
-    public function __construct(Responder $responder)
+    public function __construct(Request $request, Responder $responder)
     {
+        $this->request = $request;
         $this->responder = $responder;
     }
 
